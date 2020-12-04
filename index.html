@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Electron 串口调试</title>
+    <script src="./public/js/flexible.js"></script>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/index.css">
+</head>
+
+<body>
+    <div class="body-box">
+        <div class="tool-bar">
+            <div class="select-data">
+                <div class="form-group">
+                    <label for="disabledSelect">选择串口</label>
+                    <select id="disabledSelect" class="form-control com">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="BaudRate">波特率</label>
+                    <input type="text" class="form-control" id="BaudRate" value="115200">
+                </div>
+                <div class="form-group">
+                    <label for="MaxBits">最大Bits</label>
+                    <input type="text" class="form-control" id="MaxBits" value="8">
+                </div>
+                <div class="form-group">
+                    <label for="MaxBits">最小Bits</label>
+                    <input type="text" class="form-control" id="MinBits" value="1">
+                </div>
+            </div>
+            <div class="submit-data">
+                <button class="btn btn-primary btn-block btn-submit">确定</button>
+                <button class="btn btn-primary btn-block btn-submit-on">关闭</button>
+
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="receive-box">
+                <div class="send-header">
+                    <label>接受信息</label>
+                </div>
+                <div class="receive-windows">
+                </div>
+            </div>
+
+            <div class="send-box">
+                <div class="send-header">
+                    <label>发送信息</label>
+                </div>
+                <div class="send-windows">
+                    <textarea class="input-send-data"></textarea>
+                </div>
+
+                <div class="send-btn">
+                    <div class="btn-box">
+                        <span class="version"></span>
+                        <div class="btn btn-warning btn-send">发送信息</div>&nbsp&nbsp&nbsp
+                        <div class="btn btn-danger btn-reset">清空信息</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./public/js/render.js"></script>
+
+
+</html>

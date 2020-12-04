@@ -1,0 +1,19 @@
+{
+  "name": "electron-serialport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serialport": "^9.0.2"
+  },
+  "devDependencies": {
+    "electron": "^11.0.3",
+    "electron-packager": "^15.1.0",
+    "electron-rebuild": "^2.3.4"
+  }
+}
