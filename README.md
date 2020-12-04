@@ -10,3 +10,4 @@
     #编译完成后
     npm start
 ```
+![图片](https://github.com/skfiy/electron-serialport/blob/main/public/img/IMG1.jpg)
