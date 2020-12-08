@@ -15,11 +15,20 @@ function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 800, height: 600, 
-    //icon: './public/img/icon.png',
+    icon: 'public/img/favicon.png',
     webPreferences:{ 
       nodeIntegration:true
     }
   })
+  // Os png
+   if (process.platform === 'darwin'){
+      app.dock.setIcon(path.join(__dirname, 'public/img/favicon.png'))
+   }
+
+  // Os time 5m bounce
+   setTimeout(()=>{
+     app.dock.bounce()
+   },5000)
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({

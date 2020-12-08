@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager ./  --overwrite  --app-version=1.0.0  --platform=darwin  --arch=x64  --icon=./public/img/Icon.icns"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +14,7 @@
   },
   "devDependencies": {
     "electron": "^11.0.3",
-    "electron-packager": "^15.1.0",
+    "electron-packager": "^15.2.0",
     "electron-rebuild": "^2.3.4"
   }
 }

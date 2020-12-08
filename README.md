@@ -9,5 +9,7 @@
     win:   .\node_modules\.bin\electron-rebuild.cmd
     #编译完成后
     npm start
+    #打包
+    npm run package
 ```
 ![图片](https://github.com/skfiy/electron-serialport/blob/main/public/img/IMG1.jpg)
